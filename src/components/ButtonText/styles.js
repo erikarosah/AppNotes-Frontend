@@ -4,7 +4,7 @@ export const Container = styled.button`
     border: none;
     padding: 1rem;
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     
     cursor: pointer;
 

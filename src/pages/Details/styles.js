@@ -13,9 +13,11 @@ export const Container = styled.div`
 export const Links = styled.ul`
     text-align: center;
     > li{
+            margin-bottom: 1rem;
+
         > a {
             text-decoration: underline;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
 
             color: ${props => props.theme.COLORS.FONT_COLOR};
 
