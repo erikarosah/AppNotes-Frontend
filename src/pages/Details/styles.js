@@ -6,10 +6,12 @@ export const Container = styled.div`
         padding: 0 1rem;
         display: flex;
         align-items: center;
+        text-align: center;
     }
 `;
 
 export const Links = styled.ul`
+    text-align: center;
     > li{
         > a {
             text-decoration: underline;
@@ -32,10 +34,12 @@ export const Tags = styled.div`
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 45rem;
+    align-items: center;
+    min-width: 70vw;
     margin: 1rem auto;
 
     > div {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -52,10 +56,10 @@ export const Content = styled.div`
     > p{
         margin: 2rem 0;
         padding: 2.5rem 1rem 0 1rem;
-
+        max-width: 70vw;
         font-size: 1.3rem;
         text-align: justify;
-        
+
         color: ${props => props.theme.COLORS.FONT_COLOR};
     }
 `;

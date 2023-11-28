@@ -47,15 +47,13 @@ export function NewNote(){
             return alert("Adicione as informações para prosseguir")
         }
 
+        navigate(-1)
         await api.post("/notes", {
             title: title,
             description: description,
             tags: tags,
             links: links
         })
-
-        alert("Nota criada com sucesso")
-        navigate(-1)
     }
 
     return(
