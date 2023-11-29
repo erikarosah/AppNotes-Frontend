@@ -47,6 +47,8 @@ export function NewNote(){
             return alert("Adicione as informações para prosseguir")
         }
 
+        alert("Sua nota está sendo salva e já estará disponível na página inicial")
+
         navigate(-1)
         await api.post("/notes", {
             title: title,

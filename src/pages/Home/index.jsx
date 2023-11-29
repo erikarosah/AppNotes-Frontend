@@ -83,10 +83,8 @@ export function Home(){
                         </li>
                     ))
                 }
-
             </Filter>
-
-            <Section title={notes.length === 0? "Adicione novas notas" : "Minhas notas"}>
+                <Section title={notes.length === 0? "Ainda não há notas disponíveis.." : "Minhas notas"}>
                 { notes && notes.map((note) => (
                     <Note 
                         key={String(note.id)}
