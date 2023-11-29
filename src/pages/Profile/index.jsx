@@ -2,6 +2,7 @@ import { Container, Content, Image } from './styles';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
+import { Footer } from '../../components/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
 import { FaCamera } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
@@ -107,6 +108,7 @@ export function Profile(){
                     <RiShutDownLine/>
                 </Button>
             </Content>
+            <Footer/>
         </Container>
     )
 };

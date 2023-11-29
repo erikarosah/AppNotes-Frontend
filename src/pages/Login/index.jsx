@@ -2,6 +2,7 @@ import { Container, Brand} from './styles';
 import { Button} from '../../components/Button';
 import { ButtonText} from '../../components/ButtonText';
 import { Input} from '../../components/Input';
+import { Footer } from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useAuth } from '../../hooks/auth';
@@ -39,6 +40,7 @@ export function Login(){
             <Link to='/register'>
                 <ButtonText title="Criar conta" isActive/>
             </Link>
+            <Footer/>
         </Container>
     )
 };

@@ -4,6 +4,7 @@ import { Section } from '../../components/Section';
 import { Note } from '../../components/Note'
 import { Input } from '../../components/Input';
 import {ButtonText} from '../../components/ButtonText';
+import { Footer } from '../../components/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { api } from '../../services/api';
@@ -93,6 +94,7 @@ export function Home(){
                     />
                 ))}
             </Section>
+            <Footer/>
         </Container>
     )
 };

@@ -2,6 +2,7 @@ import { Container, Brand } from './styles';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
+import { Footer } from '../../components/Footer/Footer';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import {api} from "../../services/api";
@@ -67,6 +68,7 @@ export function Register(){
             <Link to='/'>
                 <ButtonText title="Voltar para login" isActive/> 
             </Link>
+            <Footer/>
         </Container>
     )
 };

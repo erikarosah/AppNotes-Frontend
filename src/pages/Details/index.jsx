@@ -3,6 +3,7 @@ import { Header } from '../../components/Header';
 import { Section } from '../../components/Section';
 import { ButtonText } from '../../components/ButtonText';
 import { Tag } from '../../components/Tag';
+import { Footer } from '../../components/Footer/Footer';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { api } from '../../services/api';
@@ -79,6 +80,7 @@ export function Details() {
           </Content>
         </main>
       }
+      <Footer/>
     </Container>
   )
 };

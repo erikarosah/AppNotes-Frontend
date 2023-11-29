@@ -6,6 +6,7 @@ import { NoteItem } from '../../components/NoteItem';
 import { Section } from '../../components/Section';
 import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
+import { Footer } from '../../components/Footer/Footer';
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import { api } from '../../services/api';
@@ -124,6 +125,7 @@ export function NewNote(){
                     <Button title="Salvar" onClick={handleNewNote}/>
                 </Form>
             </main>
+            <Footer/>
         </Container>
         </>
     )
